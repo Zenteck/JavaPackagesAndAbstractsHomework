@@ -29,6 +29,12 @@ public class ManagerTest {
     }
 
     @Test
+    public void canGetBonus(){
+        assertEquals(80.00, manager.payBonus(), 0.01);
+
+    }
+
+    @Test
     public void hasDeptName(){
         assertEquals("Piloting", manager.getDeptName());
     }
@@ -38,6 +44,8 @@ public class ManagerTest {
         manager.raiseSalary(1);
         assertEquals(8080.00, manager.getSalary(), 0.01);
     }
+
+
 
 
 
